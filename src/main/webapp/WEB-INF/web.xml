@@ -5,9 +5,18 @@
         <servlet-name>TwilioSmsServlet</servlet-name>
         <servlet-class>ai.api.twilio.TwilioSmsServlet</servlet-class>
     </servlet>
- 
-    <servlet-mapping>
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>ai.api.twilio.HelloWorldServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
         <servlet-name>TwilioSmsServlet</servlet-name>
         <url-pattern>/sms</url-pattern>
     </servlet-mapping>
+    
+         <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
